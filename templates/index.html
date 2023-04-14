@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel = "stylesheet" href = "style.css">
+  </head>
+  <body>
+	<form method ="POST" action="/prediction">
+        {% csrf_token %}
+        <input name = "Gender" placeholder= "1.0 for Male , 0.0 for Female"</input></br>
+        <input name="Married"  placeholder = "1.0 for Yes , 0.0 for No"></input></br>
+        <input name="Education"  placeholder = "1 for graduate , 0 for Not Graduate"></input></br>
+        <input name="Self_Employed"  placeholder = "1 for Yes , 0 for No"></input></br>
+        <input name="ApplicantIncome" placeholder = "ApplicantIncome"></input></br>
+        <input name="CoapplicantIncome" placeholder = "CoapplicantIncome"></input></br>
+        <input name="LoanAmount" placeholder = "LoanAmount"></input></br>
+        <input name="Loant_Amount_Term" placeholder = "Loant_Amount_Term"></input></br>
+        <input name="Credit_History" placeholder = "1 for Yes , 0 for No"></input></br>
+        <input name="Property_Area" placeholder = "2 for Urban , 1 for SemiUrban , 0 for Rural"></input></br>
+        <input name="Loan_Status"  placeholder = "1 for Yes , 0 for No"></input></br>
+
+        
+        <button type = "submit">PREDICTION</button>
+    </form>
+  </body>
+</html>
