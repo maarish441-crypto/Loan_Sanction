@@ -4,6 +4,6 @@ from myapp.views import *
 
 urlpatterns = [
     path("", index),
-    path("predict",predict)
+    path("prediction",predict)
 
 ]
